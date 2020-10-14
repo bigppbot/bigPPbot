@@ -22,6 +22,12 @@ async def on_message(message):
     if message.content.startswith('YES!'):
         await message.channel.send('YES! YES! YES!', file=discord.File('gifs/yes.gif', 'yes.gif'))
 
+    if message.content.startswith('ZA WARUDO!'):
+        await message.channel.send("", file=discord.File('gifs/zawarudo.gif', 'zawarudo.gif'))
+
+    if message.content.startswith('MUDA!'):
+        await message.channel.send("useless...", file=discord.File('gifs/muda.gif', 'muda.gif'))
+
     if message.content.startswith('~porn') or message.content.startswith('~hentai'):
         await message.channel.send('No. Go die in a hole!')
 
