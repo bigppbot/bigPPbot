@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import discord
+import random
 
 client = discord.Client()
+
 
 @client.event
 async def on_ready():
@@ -38,6 +40,10 @@ async def on_message(message):
 
     if message.content.startswith('good bot'):
         await message.channel.send('aaw thank you ^^');return
+
+    if message.content.startswith('ONE! TWO! SEVEN! THREE!') or message.content.startswith('1! 2! 7! 3!'):
+        rfs_texts = ["Dafuq is reality?", "Red is on a killing spree!", "Quarantine is killing me!", "I am failing chemistry!", "Noone has ever loved me...", "My wifu is in love with me?", "You are just as gay as me!", "The stupid kid is going REEE!", "All anime should be free!"]
+        await message.channel.send(random.choice(rfs_texts));return
 
     if message.content.startswith('~'):
         await message.channel.send('Am i too stupid to understand this command?');return
