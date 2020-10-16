@@ -45,8 +45,11 @@ async def on_message(message):
         rfs_texts = ["Dafuq is reality?", "Red is on a killing spree!", "Quarantine is killing me!", "I am failing chemistry!", "Noone has ever loved me...", "My wifu is in love with me?", "You are just as gay as me!", "The stupid kid is going REEE!", "All anime should be free!"]
         await message.channel.send(random.choice(rfs_texts));return
 
+    if message.content.startswith('~help'):
+        await message.channel.send('**Discord "Commands"**\n\n`ONE! TWO! SEVEN! THREE!` or `1! 2! 7! 3!`\nBots responds with _funny-ish_ extension of the sentence.\n\n`MEGNUMIN!`\nGet a "megnumin blows shit up" GIF.\n\n`EVA-01!`\nA GIF of EVA-01 stabbing the shit out of an angel.\n\n`YES!`\nThe "YES! YES! YES! YES!" GIF.\n\n`MUDA!`\nLike "YES!" but with "MUDA!".\n\n`~porn` or `~hentai`\nBot just gets pissed of at your stupid request.\n\n`~pp`\nBot explains its name.\n\n`good bot`\nBot is happy.');return
+
     if message.content.startswith('~'):
-        await message.channel.send('Am i too stupid to understand this command?');return
+        await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.');return
 
 #    if message.content.startswith(''):
 #        await message.channel.send('');return
