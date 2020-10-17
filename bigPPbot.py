@@ -51,6 +51,9 @@ async def on_message(message):
     if message.content.startswith('~toast'):
         await message.channel.send("Who told you?", file=discord.File('pics/inbread.jpg', 'inbread.jpg'));return
 
+    if message.content.startswith('Honigsandwich?'):
+        await message.channel.send("Honigsandwich!", file=discord.File('gifs/honig.gif', 'honig.gif'));return
+
     if message.content.startswith('~'):
         await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.');return
 
