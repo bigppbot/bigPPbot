@@ -33,7 +33,8 @@ async def on_message(message):
         await message.channel.send("", file=discord.File('gifs/muda.gif', 'muda.gif'));return
 
     if message.content.lower() == '~porn' or message.content.lower() == '~hentai':
-        await message.channel.send('No. Go die in a hole!');return
+        pissed_texts = ['No. Go die in a hole!','Go to horny jail!','The one of your mom?','Try a direct EVA entry!','I hope you step on a LEGO brick!',"Ask your GF/BF. Oh wait you don't have one! *fucking looser*"]
+        await message.channel.send(random.choice(pissed_texts));return
 
     if message.content.lower() == '~pp':
         await message.channel.send('PP stands for PowerPoints, you fucking degenerate!');return
