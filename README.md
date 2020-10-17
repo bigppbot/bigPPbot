@@ -26,6 +26,9 @@ Bot explains its name.
 `good bot`
 Bot is :happy:.
 
+`am i stupid?`
+bot answers your question.
+
 
 # Install
 Clone the repo via `git clone https://github.com/bigppbot/bigPPbot.git`
