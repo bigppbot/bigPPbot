@@ -58,6 +58,9 @@ async def on_message(message):
     if message.content.lower() == 'am i stupid?' or message.content.lower() == 'i am stupid':
         await message.channel.send("", file=discord.File('pics/stupid.jpg', 'u_are.jpg'));return
 
+    if message.content.lower() == 'uwu' or message.content.lower() == 'owo':
+        await message.channel.send("", file=discord.File('gifs/uwu.gif', 'UwU.gif'));return
+
     if message.content.startswith('~'):
         await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.');return
 
