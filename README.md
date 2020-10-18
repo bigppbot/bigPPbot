@@ -35,6 +35,9 @@ Another GIF it is
 `~dice`
 Roll the dice
 
+`shinji`
+i hope he gets in the fucking robot...
+
 
 # Install
 Clone the repo via `git clone https://github.com/bigppbot/bigPPbot.git`
