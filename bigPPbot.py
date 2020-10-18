@@ -65,6 +65,9 @@ async def on_message(message):
         dice_texts = ["1","2","3","4","5","6"]
         await message.channel.send(random.choice(dice_texts));return
 
+    if message.content.lower() == 'shinji':
+        await message.channel.send("", file=discord.File('pics/shinji.png', 'getin.png'));return
+
     if message.content.startswith('~'):
         await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.');return
 
