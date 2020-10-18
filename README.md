@@ -29,6 +29,12 @@ Bot is :happy:.
 `am i stupid?`
 bot answers your question.
 
+`uwu`or `owo`
+Another GIF it is
+
+`~dice`
+Roll the dice
+
 
 # Install
 Clone the repo via `git clone https://github.com/bigppbot/bigPPbot.git`
