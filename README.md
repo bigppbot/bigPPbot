@@ -38,6 +38,11 @@ Roll the dice
 `shinji`
 i hope he gets in the fucking robot...
 
+`~beer`
+Misato enjoys some beer.
+
+`~energy`
+Like beer but with energy drink
 
 # Install
 Clone the repo via `git clone https://github.com/bigppbot/bigPPbot.git`
