@@ -44,6 +44,9 @@ Misato enjoys some beer.
 `~energy`
 Like beer but with energy drink
 
+`~sourcecode`
+gives you the bots sourcecode
+
 # Install
 Clone the repo via `git clone https://github.com/bigppbot/bigPPbot.git`
 Then change into the directory by doing `cd bigPPbot`
