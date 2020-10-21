@@ -27,6 +27,9 @@ async def on_message(message):
     if message.content.upper() == 'YES!' or message.content.startswith('YES!'): #The YES! YES! YES! GIF
         await message.channel.send("", file=discord.File('gifs/yes.gif', 'yes.gif'));return
 
+    if message.content.upper() == 'NO!' or message.content.startswith('NO'):
+        await message.channel.send("", file=discord.File('gifs/no.gif', 'no.gif'));return
+
     if message.content.upper() == 'ZA WARUDO!': #The ZA WARUDO! GIF
         await message.channel.send("", file=discord.File('gifs/zawarudo.gif', 'zawarudo.gif'));return
 
@@ -48,7 +51,7 @@ async def on_message(message):
         await message.channel.send(random.choice(rfs_texts));return
 
     if message.content.lower() == '~help': #Well the hep command (duh)
-        await message.channel.send('**Discord "Commands"**\n\n`ONE! TWO! SEVEN! THREE!` or `1! 2! 7! 3!`\nBots responds with _funny-ish_ extension of the sentence.\n\n`MEGNUMIN!`\nGet a "megnumin blows shit up" GIF.\n\n`EVA-01!`\nA GIF of EVA-01 stabbing the shit out of an angel.\n\n`YES!`\nThe "YES! YES! YES! YES!" GIF.\n\n`MUDA!`\nLike "YES!" but with "MUDA!".\n\n`~porn` or `~hentai`\nBot just gets pissed of at your stupid request.\n\n`~pp`\nBot explains its name.\n\n`good bot`\nBot is happy.\n\n`am i stupid?`\nbot answers your question.\n\n`UwU`or `OwO`\n Another GIF it is\n\n`~dice`\nRoll the dice\n\n`shinji`\ni hope he gets in the fucking robot...\n\n`~beer`\nMisato enjoys some beer.\n\n`~energy`\nLike beer but with energy drink\n\n`~sourcecode`\ngives you the bots sourcecode');return
+        await message.channel.send('**Discord "Commands"**\n\n`ONE! TWO! SEVEN! THREE!` or `1! 2! 7! 3!`\nBots responds with _funny-ish_ extension of the sentence.\n\n`MEGNUMIN!`\nGet a "megnumin blows shit up" GIF.\n\n`EVA-01!`\nA GIF of EVA-01 stabbing the shit out of an angel.\n\n`YES!`\nThe "YES! YES! YES! YES!" GIF.\n\n`NO!`\nThe "NO! NO! NO!" GIF.\n\n`MUDA!`\nLike "YES!" but with "MUDA!".\n\n`~porn` or `~hentai`\nBot just gets pissed of at your stupid request.\n\n`~pp`\nBot explains its name.\n\n`good bot`\nBot is happy.\n\n`am i stupid?`\nbot answers your question.\n\n`UwU`or `OwO`\n Another GIF it is\n\n`~dice`\nRoll the dice\n\n`shinji`\ni hope he gets in the fucking robot...\n\n`~beer`\nMisato enjoys some beer.\n\n`~energy`\nLike beer but with energy drink\n\n`~sourcecode`\ngives you the bots sourcecode');return
 
     if message.content.lower() == '~toast': #Inside joke with my friends
         await message.channel.send("Who told you?", file=discord.File('pics/inbread.jpg', 'inbread.jpg'));return

@@ -14,6 +14,9 @@ A GIF of EVA-01 stabbing the shit out of an angel.
 `YES!`
 The "YES! YES! YES! YES!" GIF.
 
+`NO!`
+The "NO! NO! NO!" GIF.
+
 `MUDA!`
 Like "YES!" but with "MUDA!".
 
