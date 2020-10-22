@@ -4,9 +4,6 @@ import random
 
 client = discord.Client()
 
-global stoopid
-stoopid = 0
-
 
 #Gives welcome message, and sets status to "Watching Anime"
 @client.event
@@ -20,11 +17,6 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-
-    global stoopid
-
-    oldstoopid = stoopid
-    stoopid = 0
 
     if message.content.upper() == 'MEGNUMIN!': #The megnumin GIF
         await message.channel.send("", file=discord.File('gifs/megnumin.gif', 'boom.gif'));return
@@ -99,20 +91,9 @@ async def on_message(message):
         await message.channel.send("", file=discord.File('gifs/ip.gif', 'ip.gif'));return
 
     if message.content.lower() == '~blast' or message.content.lower() == 'ramiel!':
-        await message.channel.send("", file=discord.File('gifs/ramiel.gif', 'ramiel.gif'));return
 
-    if message.content.lower() == '~nuke' or message.content.lower() == 'n2!':
-        await message.channel.send("", file=discord.File('gifs/nuke.gif', 'nuke.gif'));return
-
-    if message.content.lower() == '~explode':
-        await message.channel.send("", file=discord.File('gifs/explode.gif', 'explode.gif'));return
-
-    if message.content.startswith('~'): #Error message if command is unknown
-        stoopid = oldstoopid
-        stoopid = stoopid+1
+    if message.content.startswith('~'): #Error message if command is unknowen
         await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.');return
-        if stoopid > 9:
-                await message.channel.send("", file=discord.File('gifs/tired.gif', 'why.gif'));return
 
 #    if message.content.startswith(''):
 #        await message.channel.send('');return
