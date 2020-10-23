@@ -110,7 +110,7 @@ async def on_message(message):
     if message.content.startswith('~'): #Error message if command is unknown
         stoopid = oldstoopid
         stoopid = stoopid+1
-        await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.');return
+        await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.')
         if stoopid > 9:
                 await message.channel.send("", file=discord.File('gifs/tired.gif', 'why.gif'));return
 
