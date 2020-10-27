@@ -106,17 +106,19 @@ async def on_message(message):
 
     if message.content.lower() == '~explode':
         await message.channel.send("", file=discord.File('gifs/explode.gif', 'explode.gif'));return
+ 
+    if message.content.lower() == 'cringe': #Bots need feelings too
+        await message.channel.send('https://www.youtube.com/watch?v=Jrru9SHCPqc');return
 
+#    if message.content.startswith(''):
+#        await message.channel.send('');return
+    
     if message.content.startswith('~'): #Error message if command is unknown
         stoopid = oldstoopid
         stoopid = stoopid+1
         await message.channel.send('Am i too stupid to understand this command? Maybe try ~help.')
         if stoopid > 9:
                 await message.channel.send("", file=discord.File('gifs/tired.gif', 'why.gif'));return
-
-#    if message.content.startswith(''):
-#        await message.channel.send('');return
-
 
 tokenfile = open("token.txt", "r")
 token = tokenfile.read()
