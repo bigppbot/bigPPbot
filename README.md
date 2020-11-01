@@ -50,6 +50,28 @@ Like beer but with energy drink
 `~sourcecode`
 gives you the bots sourcecode
 
+`~vibecheck`
+Check out the vibe
+
+`~3rdImpact`
+oh look they are turning into fanta see
+
+`~ip`
+Oh look im a really cool l33t haxxor
+
+`~blast`
+ramiel and eva-01 battle
+
+`~nuke`
+When someones words just call for an N2
+
+`~explode`
+Turn them into fanta (with the power of love)
+
+`cringe`
+He just posted cringe, and will lose subs
+
+
 # Install
 Clone the repo via `git clone https://github.com/bigppbot/bigPPbot.git`
 Then change into the directory by doing `cd bigPPbot`
