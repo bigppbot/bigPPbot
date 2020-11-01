@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 import discord
 import random
+import os
 
 client = discord.Client()
 
 global stoopid
 stoopid = 0
+
+os.chdir(os.path.dirname(os.path.abspath(__file__))) #Change to directory of python script
 
 
 #Gives welcome message, and sets status to "Watching Anime"
